@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(124, 122, 255);
+        }
+        a:hover{
+            text-decoration: underline;
+            color:rgb(59, 58, 128); 
+        }
+        a::after{
+         content: '<-';     
+        }
+        a::before{
+            content: '->';
+        }
+        .destaque::before{
+            content: '-->';
+            color: rgb(255, 243, 80);
+        }
+        .destaque::after{
+            content: '<--';
+            color: rgb(255, 243, 80);
+        }
+    </style>
+</head>
+<body>
+   <h1>links fodase</h1> 
+
+   <ul>
+    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwijjLWpu7WEAxV_r5UCHb6uBy8QFnoECAcQAQ&url=https%3A%2F%2Fwww.disneyplus.com%2Fpt-br&usg=AOvVaw2nZ5xA30AaJj7vOUqhPc1q&opi=89978449" target="_blank" class="destaque">xixi</a></li>
+    <li><a href="https://www.youtube.com" target="_blank">bosta</a></li>
+    <li><a href="https://multicanais.cl" target="_blank" class="destaque">pinto</a></li>
+   </ul>
+</body>
+</html>
